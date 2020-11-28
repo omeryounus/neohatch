@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
 
   <!-- Custom styles for this template -->
-  <link href="css/new-age.min.css" rel="stylesheet">
+  <link href="css/new-age.css" rel="stylesheet">
 
 </head>
 
@@ -187,6 +187,13 @@
         </li>
       </ul>
     </div>
+    <div class=’cookie-banner’ style=’display: none’>
+      <p>
+          By using our website, you agree to our
+          <a href='https://termify.io/cookie-policy/1606108385'>cookie policy</a>
+        </p>
+      <button class=’close’>&times;</button>
+    </div>
   </section>
 
   <footer>
@@ -214,7 +221,32 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/new-age.min.js"></script>
+  <script src="js/new-age.js"></script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyABlIxVp09092zXfwtuLEBlGXXAJlZmp44",
+      authDomain: "carfinder-dfe83.firebaseapp.com",
+      databaseURL: "https://carfinder-dfe83.firebaseio.com",
+      projectId: "carfinder-dfe83",
+      storageBucket: "carfinder-dfe83.appspot.com",
+      messagingSenderId: "744530646677",
+      appId: "1:744530646677:web:48ea6d822e9087f100ed9c",
+      measurementId: "G-2XTBWMYV7M"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
 
 </body>
 
